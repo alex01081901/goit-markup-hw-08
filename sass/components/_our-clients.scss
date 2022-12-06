@@ -1,0 +1,40 @@
+.clients__client {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+}
+
+.clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    color: #afb1b8;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:hover,
+   &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.clients__list {
+    display: flex;
+    gap: 30px;
+    fill: currentColor;
+}
+
+.clients__cli {
+    fill: currentColor;
+}

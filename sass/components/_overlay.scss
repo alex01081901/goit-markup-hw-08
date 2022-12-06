@@ -1,0 +1,32 @@
+.progect-thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 101%;
+
+    background: rgba(33, 150, 243, 0.9);
+    transition: transform 250ms;
+     &-texts {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: #ffffff;
+        padding-left: 24px;
+        padding-right: 24px;
+        text-align: center;
+    }
+}
+
+.progect-link:hover .overlay {
+    transform: translateY(0%);
+}
