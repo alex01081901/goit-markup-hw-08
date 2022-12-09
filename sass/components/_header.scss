@@ -3,13 +3,27 @@
     align-items: center;
 }
 .after-nav {
-    display: flex;
-    gap: 50px;
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+    @media screen and (min-width:768px) {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 45px;
+    }
+    
     margin-left: auto;
     align-items: center;
+    @media screen and (min-width:1200px) {
+        gap: 50px;
+        display: flex;
+    }
 }
 
 .header-nav {
+    @media screen and (max-width:767px) {
+            display: none;
+        }
     display: flex;
     align-items: center;
     margin-left: 93px;
@@ -116,6 +130,7 @@
 }
 
 .address-mails {
+
     text-decoration: none;
     font-family: 'Roboto';
     font-weight: 500;

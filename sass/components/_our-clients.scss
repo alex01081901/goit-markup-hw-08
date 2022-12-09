@@ -11,10 +11,16 @@
 }
 
 .clients__link {
+   @media screen and (min-width: 768px) {
+    width: 226px;
+   }
+   @media screen and (min-width:1200) {
+    width: 1200px;
+   }
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid currentColor;
     border-radius: 4px;
@@ -30,6 +36,13 @@
 }
 
 .clients__list {
+    @media screen and (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+        
+    }       
     display: flex;
     gap: 30px;
     fill: currentColor;

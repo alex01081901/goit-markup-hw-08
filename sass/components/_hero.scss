@@ -1,15 +1,49 @@
 .hero {
     background-color: #2f303a;
     padding: 200px 0;
+    //desctop screen
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../img/Img17.jpg);
+        url(../images/Img_hed@x.png);
+//desctop screen retina
+@media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/Img_hed2@x.png);
+    }
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1600px;
     height: 600px;
     margin: 0 auto;
-
+    }
+//mobile screen
      &-title {
+        @media screen and (min-width: 480px) {
+            font-size: 42px;
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url(../images/Header/img_mbhed@x.png);
+        
+//mobile screen retina
+
+                @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                            url(../images/Header/img_mbhed@2x.png@x.png);
+                }
+
+        @media screen and (min-width: 768) {
+            font-size: 42px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../../images/Header/img_mdhed@x.png);
+@media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../../images/Header/img_mdhed@2x.png);
+    }
+        }
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 900;

@@ -12,8 +12,24 @@
 }
 
 .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
     display: flex;
     gap: 30px;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+            gap: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        display: flex;
+        gap: 30px;
+    }
 }
 
 .about__item::before {
@@ -48,6 +64,7 @@
 }
 
 .about__title {
+text-align-last: center;
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);

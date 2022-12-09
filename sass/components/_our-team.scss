@@ -11,6 +11,13 @@
 }
 
 .komand-title {
+    @media screen and (max-width: 1199px) {
+font-size: 28px;
+    line-height: 33px;
+    }
+     
+        
+    
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -22,7 +29,12 @@
 }
 
 .our-team-conteiner {
+    @media screen and (max-width: 1199px) {
+        flex-wrap: wrap;
+        align-items: center;
+    }
     display: flex;
+    
     gap: 30px;
 }
 

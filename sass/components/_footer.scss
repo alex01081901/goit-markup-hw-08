@@ -6,12 +6,18 @@
 .footer .conteiner {
     display: flex;
     align-items: baseline;
+    @media screen and (max-width:767px) {
+    flex-direction: column;
+        align-items: center;
+    }
+    
 }
 
 .header-conteiner {
     display: flex;
     gap: 50px;
     align-items: center;
+    
 }
 
 .address {
@@ -54,10 +60,18 @@
 }
 
 .contact {
+    @media screen and (max-width:767px) {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        
+    }
     margin-left: 70px;
 }
 
 .footer-text {
+    @media screen and (max-width:767px) {
+     padding-left: 50px;
+    }
     font-weight: 700;
     line-height: 16px;
     text-transform: uppercase;
@@ -110,11 +124,19 @@
 }
 
 .form-social {
+    @media screen and (max-width:767px) {
+            display: flex;
+            flex-direction: column;
+            
+        }
     display: flex;
     gap: 12px;
 }
 
 .text-social {
+    @media screen and (max-width:767px) {
+      text-align: center;
+    }
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
