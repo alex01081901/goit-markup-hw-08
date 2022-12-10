@@ -10,11 +10,17 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 } 
-
+section {
+    @media screen and (max-width: 1199px){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
 .about {
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
+    flex-direction: column;
     gap: 30px;
     .about-item {
 flex-basis: calc(100% / 2);

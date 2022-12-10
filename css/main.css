@@ -70,6 +70,7 @@ section {
 }
 
 .conteiner {
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -409,8 +410,9 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin: 0 auto;
+  padding: 118px 0;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
@@ -418,29 +420,42 @@ section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img_hed2@x.png);
   }
 }
-.hero-title {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-  width: 696px;
-  margin: 0 auto;
-}
+
 @media screen and (min-width: 480px) {
-  .hero-title {
+  hero-title {
     font-size: 42px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/Header\ img_mbhed@x.png);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Header\ img_mbhed@x.png);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header/img_mbhed@x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header/img_mbhed@x.jpg);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.3636363636;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    max-width: 360px;
+    margin: 0 auto;
   }
 }
-@media screen and (min-width: 768) {
-  .hero-title {
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  hero-title {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header/img_mdhed@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header/img_mdhed@2x.jpg);
+  }
+}
+@media screen and (min-width: 480px) and (min-width: 768) {
+  hero-title {
     font-size: 42px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header/img_mdhed@x.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header/img_mdhed@x.png);
+  }
+}
+@media screen and (min-width: 480px) and (min-width: 768) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-width: 768) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-width: 768) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-width: 768) and (min-resolution: 2dppx) {
+  hero-title {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header/img_mdhed@2x.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header/img_mdhed@2x.png);
   }
 }
 
@@ -458,17 +473,28 @@ section {
   overflow: hidden;
 }
 
+@media screen and (max-width: 1199px) {
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .about {
   padding-top: 60px;
   padding-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 30px;
+}
+.about .about-item {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 @media screen and (min-width: 768px) {
   .about {
@@ -716,11 +742,21 @@ section {
   color: #212121;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 767) {
+  .clients__client {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
 
 .clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -897,7 +933,8 @@ section {
 }
 
 .contact {
-  margin-left: 70px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (max-width: 767px) {
   .contact {
@@ -980,6 +1017,7 @@ section {
 
 .social-email {
   margin-left: auto;
+  margin-right: auto;
 }
 
 .form-social {
@@ -1016,7 +1054,7 @@ section {
 }
 
 .enter {
-  width: 358px;
+  width: 100%;
   height: 50px;
   background-color: transparent;
   border-radius: 4px;
@@ -1041,6 +1079,7 @@ section {
   position: fixed;
   top: 0;
   left: 0;
+  overflow-y: scroll;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
@@ -1070,6 +1109,21 @@ section {
   width: 528px;
   height: 581px;
   padding: 40px;
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 95%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 609px;
+    overflow: scroll;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .close-btn {
@@ -1595,6 +1649,13 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100vw;
   height: 100vh;
   padding: 32px;
@@ -1622,7 +1683,7 @@ header {
 
 .mobile-menu {
   padding: 0;
-  margin: 0;
+  margin-bottom: auto;
   list-style: none;
 }
 

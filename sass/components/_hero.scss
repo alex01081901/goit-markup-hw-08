@@ -14,15 +14,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1600px;
-    height: 600px;
+    height: 400px;
     margin: 0 auto;
+    padding: 118px 0;
     }
 //mobile screen
-     &-title {
+     hero-title {
         @media screen and (min-width: 480px) {
             font-size: 42px;
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                    url(../images/Header/img_mbhed@x.png);
+                    url(../images/Header/img_mbhed@x.jpg);
         
 //mobile screen retina
 
@@ -30,30 +31,30 @@
                 screen and (min-resolution: 192dpi),
                 screen and (min-resolution: 2dppx) {
                     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                            url(../images/Header/img_mbhed@2x.png@x.png);
+                            url(../images/Header/img_mdhed@2x.jpg);
                 }
 
         @media screen and (min-width: 768) {
             font-size: 42px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../../images/Header/img_mdhed@x.png);
+                url(../images/Header/img_mdhed@x.png);
 @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../../images/Header/img_mdhed@2x.png);
+            url(../images/Header/img_mdhed@2x.png);
     }
         }
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 900;
-        font-size: 44px;
+        font-size: 26px;
         line-height: calc(60 / 44);
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: #ffffff;
-        width: 696px;
+       max-width: 360px;
         margin: 0 auto;
     }
 }
