@@ -9,7 +9,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-           url(../../images/img_mdhed@2x.jpg);
+           url(../images/img_mdhed@2x.jpg);
     }
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,17 +17,17 @@
     height: 400px;
     margin: 0 auto;
     padding: 118px 0;
-    }
+   
 //mobile screen
      &-title {
         @media screen and (min-width: 480px) {
-            font-size: 42px;
+            font-size: 26px;
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                     url(../images/img_mbhed@x.jpg);
-        
+        }
 //mobile screen retina
 
-                @media screen and (min-device-pixel-ratio: 2),
+               @media screen and (min-device-pixel-ratio: 2),
                 screen and (min-resolution: 192dpi),
                 screen and (min-resolution: 2dppx) {
                     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -48,7 +48,7 @@
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 900;
-        font-size: 26px;
+        font-size: 42px;
         line-height: calc(60 / 44);
         text-align: center;
         letter-spacing: 0.06em;
