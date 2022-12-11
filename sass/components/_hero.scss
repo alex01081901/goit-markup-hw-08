@@ -2,14 +2,14 @@
     background-color: #2f303a;
     padding: 200px 0;
     //desctop screen
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../img/Img17.jpg);
 //desctop screen retina
 @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url();
+           url(../../images/img_mdhed@2x.jpg);
     }
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,11 +19,11 @@
     padding: 118px 0;
     }
 //mobile screen
-     hero-title {
+     &-title {
         @media screen and (min-width: 480px) {
             font-size: 42px;
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                    url(../images/img_mbhed@2x.jpg);
+                    url(../images/img_mbhed@x.jpg);
         
 //mobile screen retina
 
