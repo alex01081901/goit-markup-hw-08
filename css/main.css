@@ -420,43 +420,44 @@ section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_mdhed@2x.jpg);
   }
 }
-.hero-title {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 42px;
-  line-height: 1.3636363636;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-  max-width: 360px;
-  margin: 0 auto;
-}
 @media screen and (min-width: 480px) {
-  .hero-title {
-    font-size: 26px;
+  .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img_mbhed@x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_mbhed@x.jpg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero-title {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img_mdhed@2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_mdhed@2x.jpg);
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img_mbhed@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_mbhed@2x.jpg);
   }
 }
 @media screen and (min-width: 768) {
-  .hero-title {
+  .hero {
     font-size: 42px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img_mdhed@x.png);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_mdhed@x.png);
   }
 }
 @media screen and (min-width: 768) and (min-device-pixel-ratio: 2), screen and (min-width: 768) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768) and (min-resolution: 192dpi), screen and (min-width: 768) and (min-resolution: 2dppx) {
-  .hero-title {
+  .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img_mdhed@2x.png);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_mdhed@2x.png);
+  }
+}
+@media screen and (min-width: 768) {
+  .hero-title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.3636363636;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    max-width: 360px;
+    margin: 0 auto;
   }
 }
 
@@ -736,7 +737,7 @@ section {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -802,10 +803,7 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    /*flex-direction: column;*/
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-align: center;

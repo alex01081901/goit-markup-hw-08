@@ -2,7 +2,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
@@ -44,7 +44,7 @@
 .clients__list {
     @media screen and (max-width: 767px) {
             display: flex;
-            flex-direction: column;
+            /*flex-direction: column;*/
             flex-wrap: wrap;
             align-items: center;
         
