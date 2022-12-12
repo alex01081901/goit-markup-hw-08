@@ -505,18 +505,8 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   gap: 30px;
-  /* @media screen and (min-width: 768px) {
-       display: flex;
-       flex-wrap: wrap;
-           gap: 30px;
-   }
-
-   @media screen and (min-width: 1200px) {
+  /* @media screen and (min-width: 1200px) {
        padding-top: 94px;
        padding-bottom: 94px;
        display: flex;
@@ -525,8 +515,24 @@ section {
 }
 .about .about-item {
   gap: 30px;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+}
+@media screen and (max-width: 480px) {
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.about-item {
+  width: 354px;
 }
 
 .about__item::before {
@@ -877,6 +883,15 @@ section {
     text-align: center;
   }
 }
+@media screen and (max-width: 1199px) {
+  .footer .conteiner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 .header-conteiner {
   display: -webkit-box;
@@ -943,6 +958,16 @@ address {
   .contact {
     margin-top: 60px;
     margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .contact {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    margin-right: 0;
   }
 }
 
@@ -1017,6 +1042,11 @@ address {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 1199px) {
+  .social-email {
+    margin-top: 60px;
+  }
+}
 
 .form-social {
   display: -webkit-box;
@@ -1045,7 +1075,7 @@ address {
   color: #ffffff;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .text-social {
     text-align: center;
   }
