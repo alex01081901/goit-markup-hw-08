@@ -2,7 +2,7 @@
     background-color: #2f303a;
     padding: 200px 0;
     //desctop screen
-   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  /* background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../img/Img17.jpg);
 //desctop screen retina
 @media screen and (min-device-pixel-ratio: 2),
@@ -10,7 +10,7 @@
     screen and (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
            url(../images/img_mdhed@2x.jpg);
-    }
+    }*/
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1600px;
@@ -34,7 +34,7 @@
                             url(../images/img_mbhed@2x.jpg);
                 }
 
-        @media screen and (min-width: 768) {
+       /* @media screen and (min-width: 768) {
             font-size: 42px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                 url(../images/img_mdhed@x.png);
@@ -43,7 +43,7 @@
     screen and (min-resolution: 2dppx) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../images/img_mdhed@2x.png);
-    }
+    }*/
          &-title {
         
         font-family: 'Roboto';
@@ -58,7 +58,6 @@
        max-width: 360px;
         margin: 0 auto;
     }
-}
 
 }
 

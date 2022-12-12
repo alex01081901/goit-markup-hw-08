@@ -10,38 +10,36 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 } 
-section {
+/*section {
     @media screen and (max-width: 1199px){
         padding-top: 60px;
         padding-bottom: 60px;
     }
-}
+}*/
 .about {
-    padding-top: 60px;
-    padding-bottom: 60px;
     display: flex;
-    flex-direction: column;
     gap: 30px;
     .about-item {
-flex-basis: calc(100% / 2);
+        gap: 30px;
+
     }
   
-    
-
-    @media screen and (min-width: 768px) {
+   @media screen and (min-width: 480px) {
         display: flex;
         flex-wrap: wrap;
             gap: 30px;
     }
 
-    @media screen and (min-width: 1200px) {
+   /* @media screen and (min-width: 1200px) {
         padding-top: 94px;
         padding-bottom: 94px;
         display: flex;
         gap: 30px;
-    }
+    }*/
 }
-
+/.about-item {
+    width: 354px;
+}
 .about__item::before {
     display: block;
     content: '';
