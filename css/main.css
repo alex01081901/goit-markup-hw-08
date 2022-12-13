@@ -960,12 +960,12 @@ address {
     margin-bottom: 60px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .contact {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact {
     margin-right: 0;
   }
@@ -1687,7 +1687,7 @@ header {
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: #3f51b5;
+  background-color: #fff;
   z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -1720,4 +1720,50 @@ header {
   padding: 10px;
   color: #fff;
   text-decoration: none;
+}
+
+.link-contact,
+.link-portfolio {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.link-studio-item {
+  color: #2196F3;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+}
+
+.contactes {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.contacts {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mobile-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.mobile-socials-item {
+  color: #2196F3;
 }/*# sourceMappingURL=main.css.map */
