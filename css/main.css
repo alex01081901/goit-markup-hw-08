@@ -209,6 +209,12 @@ section {
   margin-top: 30px;
 }
 
+/*button mobile*/
+.button-mobile {
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -229,14 +235,13 @@ section {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .after-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 10px;
-    margin-top: 45px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -286,8 +291,7 @@ section {
   color: #000000;
 }
 
-.header-nav-studios,
-.header-mail-link {
+.header-nav-studios {
   position: relative;
   font-weight: 500;
   font-size: 14px;
@@ -295,6 +299,18 @@ section {
   letter-spacing: 0.02em;
   color: #2196f3;
   padding: 32px 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .header-mail-link {
+    display: block;
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
 }
 
 .header-nav-studios::after {
@@ -506,6 +522,8 @@ section {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   /* @media screen and (min-width: 1200px) {
        padding-top: 94px;
        padding-bottom: 94px;
@@ -516,7 +534,7 @@ section {
 .about .about-item {
   gap: 30px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .about {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -531,8 +549,10 @@ section {
   }
 }
 
-.about-item {
-  width: 354px;
+@media screen and (min-width: 768px) {
+  .about__item {
+    width: 354px;
+  }
 }
 
 .about__item::before {
@@ -645,7 +665,11 @@ section {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 354px;
+}
+@media screen and (min-width: 768px) {
+  .li-style {
+    width: 354px;
+  }
 }
 
 .komand-title {
@@ -893,6 +917,11 @@ section {
   }
 }
 
+.over-contact {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .header-conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -958,16 +987,6 @@ address {
   .contact {
     margin-top: 60px;
     margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .contact {
-    margin-right: 0;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contact {
-    margin-right: 0;
   }
 }
 
@@ -1041,11 +1060,7 @@ address {
 .social-email {
   margin-left: auto;
   margin-right: auto;
-}
-@media screen and (max-width: 1199px) {
-  .social-email {
-    margin-top: 60px;
-  }
+  margin-top: 60px;
 }
 
 .form-social {
@@ -1054,7 +1069,7 @@ address {
   display: flex;
   gap: 12px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .form-social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1101,6 +1116,11 @@ address {
   color: var(--main-text-color);
   border: 1px solid var(--accent-color);
   background-color: var(--secondary-text-color);
+}
+@media screen and (min-width: 650px) and (max-width: 1199px) {
+  .enter {
+    width: 450px;
+  }
 }
 
 .backgrop {
@@ -1382,6 +1402,7 @@ address {
 
 header {
   border: 1px solid #ececec;
+  padding: 10px 0;
 }
 
 .header-nav-studio,
@@ -1645,15 +1666,9 @@ header {
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  /* display: flex;
+   align-items: center;
+   justify-content: center;*/
   margin-left: auto;
   padding: 0;
   background-color: transparent;
@@ -1761,9 +1776,14 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 10px;
 }
 
 .mobile-socials-item {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
   color: #2196F3;
 }/*# sourceMappingURL=main.css.map */

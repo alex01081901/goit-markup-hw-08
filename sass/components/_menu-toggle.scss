@@ -1,13 +1,13 @@
 .menu-toggle {
     min-height: 40px;
     min-width: 40px;
-    display: flex;
+   /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
 
     margin-left: auto;
     padding: 0;
-    background-color: transparent;
+   background-color: transparent;
     cursor: pointer;
     border: none;
     border-radius: 50%;
@@ -101,10 +101,15 @@ text-decoration: none;
 }
 .mobile-social {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    row-gap: 10px;
     
 
 }
 .mobile-socials-item {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+       
     color: #2196F3;
 }

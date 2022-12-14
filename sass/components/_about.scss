@@ -19,12 +19,13 @@
 .about {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
     .about-item {
         gap: 30px;
 
     }
   
-   @media screen and (max-width: 480px) {
+   @media screen and (max-width: 767px) {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -38,8 +39,11 @@
         gap: 30px;
     }*/
 }
-.about-item {
+.about__item {
+ @media screen and (min-width:768px) {
     width: 354px;
+ }
+    
 }
 .about__item::before {
     display: block;
