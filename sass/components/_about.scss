@@ -40,10 +40,12 @@
     }*/
 }
 .about__item {
- @media screen and (min-width:768px) {
+ @media screen and (min-width:768px)  {
     width: 354px;
  }
-    
+  @media screen and (min-width:1200px) {
+    width: 270px;
+  }  
 }
 .about__item::before {
     display: block;
