@@ -465,7 +465,6 @@ section {
 }
 @media screen and (min-width: 768) {
   .hero {
-    font-size: 42px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img_mdhed@x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_mdhed@x.jpg);
   }
@@ -499,8 +498,25 @@ section {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  max-width: 360px;
   margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .hero-title {
+    max-width: 360px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 42px;
+    width: 696px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.3636363636;
+    width: 696px;
+  }
 }
 
 .visually-hidden {
