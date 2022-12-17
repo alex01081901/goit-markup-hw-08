@@ -11,7 +11,7 @@
    
 //mobile screen
     
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 300px) {
            
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                     url(../images/img_mbhed@x.jpg);
@@ -43,7 +43,8 @@
 
   //desctop screen
 @media screen and (min-width:1200px) {
-    
+    height: 600px;
+    padding: 200px 0;
    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/Imglg_hed@x.webp);
 }

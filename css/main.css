@@ -223,6 +223,10 @@ section {
           align-items: center;
 }
 
+.logo {
+  padding: 24px 0;
+}
+
 .after-nav {
   margin-left: auto;
   -webkit-box-align: center;
@@ -451,7 +455,7 @@ section {
   margin: 0 auto;
   padding: 118px 0;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 300px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img_mbhed@x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_mbhed@x.jpg);
@@ -477,6 +481,8 @@ section {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    height: 600px;
+    padding: 200px 0;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Imglg_hed@x.webp);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Imglg_hed@x.webp);
   }
@@ -1023,7 +1029,6 @@ address {
 @media screen and (max-width: 767px) {
   .contact {
     margin-top: 60px;
-    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1456,7 +1461,7 @@ address {
 
 header {
   border: 1px solid #ececec;
-  padding: 10px 0;
+  /* padding: 10px 0;*/
 }
 
 .header-nav-studio,
@@ -1799,6 +1804,7 @@ header {
   line-height: 47px;
   letter-spacing: 0.02em;
   color: #212121;
+  margin-top: 32px;
 }
 
 .link-studio-item {
@@ -1812,7 +1818,7 @@ header {
 
 .contactes {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 28px;
   line-height: 40px;
   letter-spacing: 0.02em;
   color: #2196F3;
@@ -1833,7 +1839,7 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   row-gap: 10px;
-  margin-top: auto;
+  margin-top: 32px;
 }
 
 .mobile-socials-item {
