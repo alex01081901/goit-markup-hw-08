@@ -192,7 +192,10 @@ margin-top: 20px;
         border: 1px solid var(--accent-color);
         background-color: var(--secondary-text-color);
     }
-    @media screen and (min-width:650px) and (max-width: 1199px) {
+    @media screen and (min-width: 310px) {
+        width: 280px;
+    }
+    @media screen and (min-width:470px) and (max-width: 1199px) {
        width: 450px; 
     }
     @media screen and (min-width: 1200px) {

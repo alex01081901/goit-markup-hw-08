@@ -1171,7 +1171,12 @@ address {
   border: 1px solid var(--accent-color);
   background-color: var(--secondary-text-color);
 }
-@media screen and (min-width: 650px) and (max-width: 1199px) {
+@media screen and (min-width: 310px) {
+  .enter {
+    width: 280px;
+  }
+}
+@media screen and (min-width: 470px) and (max-width: 1199px) {
   .enter {
     width: 450px;
   }
